@@ -1,0 +1,172 @@
+
+<html>
+    <head>
+        <title>HTML5 Canvas Winning Wheel</title>
+        <link rel="stylesheet" href="main.css" type="text/css" />
+        <script type="text/javascript" src="Winwheel.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		
+    </head>
+    <body>
+        <div align="center"> 
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <div class="power_controls">
+                            <br />
+                            <br />
+                            <table class="power" cellpadding="10" cellspacing="0">
+                                <tr>
+                                    <th align="center">Power</th>
+                                </tr>
+                                <tr>
+                                    <td width="78" align="center" id="pw3" onClick="powerSelected(3);">High</td>
+                                </tr>
+                                <tr>
+                                    <td align="center" id="pw2" onClick="powerSelected(2);">Med</td>
+                                </tr>
+                                <tr>
+                                    <td align="center" id="pw1" onClick="powerSelected(1);">Low</td>
+                                </tr>
+                            </table>
+                            <br />
+                            <img id="spin_button" src="spin_off.png" alt="Spin" onClick="startSpin();" />
+                            <br /><br />
+                            &nbsp;&nbsp;<a href="#" onClick="resetWheel(); return false;">Jokatu Berriro</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </td>
+                    <td width="438" height="582" class="the_wheel" align="center" valign="center">
+                        <canvas id="canvas" width="434" height="434">
+                            <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
+                        </canvas>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script>
+	        var txt = "USA";
+            
+            let theWheel = new Winwheel({
+                'numSegments'  : 6,     
+                'outerRadius'  : 212,  
+                'textFontSize' : 28,    
+                'segments'     :        
+                [
+                   {'fillStyle' : '#eae56f', 'text' : "USA"},
+                   {'fillStyle' : '#89f26e', 'text' : 'China'},
+                   {'fillStyle' : '#7de6ef', 'text' : 'Japon'},
+                   {'fillStyle' : '#e7706f', 'text' : 'India'},
+                   {'fillStyle' : '#eae56f', 'text' : 'Alemania'},
+                   {'fillStyle' : '#89f26e', 'text' : 'España'},
+                ],
+                'animation' :           
+                {
+                    'type'     : 'spinToStop',
+                    'duration' : 5,   
+                    'spins'    : 8,     
+                    'callbackFinished' : alertPrize
+                }
+            });
+
+           
+            let wheelPower    = 0;
+            let wheelSpinning = false;
+
+        
+          
+        
+            function powerSelected(powerLevel)
+            {
+               
+                if (wheelSpinning == false) {
+                
+                    document.getElementById('pw1').className = "";
+                    document.getElementById('pw2').className = "";
+                    document.getElementById('pw3').className = "";
+
+              
+                    if (powerLevel >= 1) {
+                        document.getElementById('pw1').className = "pw1";
+                    }
+
+                    if (powerLevel >= 2) {
+                        document.getElementById('pw2').className = "pw2";
+                    }
+
+                    if (powerLevel >= 3) {
+                        document.getElementById('pw3').className = "pw3";
+                    }
+
+
+                    wheelPower = powerLevel;
+
+                 
+                    document.getElementById('spin_button').src = "spin_on.png";
+                    document.getElementById('spin_button').className = "clickable";
+                }
+            }
+
+    
+
+         
+            function startSpin()
+            {
+              
+                if (wheelSpinning == false) {
+                  
+                   
+                    if (wheelPower == 1) {
+                        theWheel.animation.spins = 3;
+                    } else if (wheelPower == 2) {
+                        theWheel.animation.spins = 8;
+                    } else if (wheelPower == 3) {
+                        theWheel.animation.spins = 15;
+                    }
+
+                    
+                    document.getElementById('spin_button').src       = "spin_off.png";
+                    document.getElementById('spin_button').className = "";
+
+                  
+                    theWheel.startAnimation();
+
+                 
+               
+                    wheelSpinning = true;
+                }
+            }
+
+       
+       
+      
+            function resetWheel()
+            {
+                theWheel.stopAnimation(false); 
+                theWheel.rotationAngle = 0;    
+                theWheel.draw();            
+
+                document.getElementById('pw1').className = "";
+                document.getElementById('pw2').className = "";
+                document.getElementById('pw3').className = "";
+
+                wheelSpinning = false;          
+            }
+
+         
+      
+           
+      
+            function alertPrize(indicatedSegment)
+            {
+               
+	                alert("Go to " + indicatedSegment.text); 
+            }
+        </script>
+       <a href="file:///C:/Users/Usuario/Desktop/Georuleta%20projektua%20(oinarri%20metodologikoak)/USA.html"><input class="usa" type=button value=USA ></a>
+       <a href="file:///C:/Users/Usuario/Desktop/Georuleta%20projektua%20(oinarri%20metodologikoak)/China.html"> <input class="china" type=button value=China></a> <br>
+        <a href="file:///C:/Users/Usuario/Desktop/Georuleta%20projektua%20(oinarri%20metodologikoak)/Japon.html"><input class="japon" type=button value=Japon></a>
+        <a href="file:///C:/Users/Usuario/Desktop/Georuleta%20projektua%20(oinarri%20metodologikoak)/India.html"><input class="india" type=button value=India></a> <br>
+       <a href="file:///C:/Users/Usuario/Desktop/Georuleta%20projektua%20(oinarri%20metodologikoak)/Alemania.html"><input class="alemania" type=button value=Alemania></a>
+        <a href="file:///C:/Users/Usuario/Desktop/Georuleta%20projektua%20(oinarri%20metodologikoak)/Espa%C3%B1a.html" ><input class="españa" type=button value=España></a>
+    </body>
+</html>

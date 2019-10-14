@@ -1,0 +1,148 @@
+
+
+body
+{
+    font-family: arial;
+	background-image: url(https://wallpaperaccess.com/full/173801.png)
+}
+
+
+td.the_wheel
+{
+    background-image: url(./wheel_back.png);
+    background-position: center;
+    background-repeat: none;
+}
+
+
+h1, p
+{
+    margin: 0;
+}
+
+div.power_controls
+{
+    margin-right:70px;
+}
+
+div.html5_logo
+{
+    margin-left:70px;
+}
+
+
+table.power
+{
+    background-color: #cccccc;
+    cursor: pointer;
+    border:1px solid #333333;
+}
+
+table.power th
+{
+    background-color: white;
+    cursor: default;
+}
+
+td.pw1
+{
+    background-color: #6fe8f0;
+}
+
+td.pw2
+{
+    background-color: #86ef6f;
+}
+
+td.pw3
+{
+    background-color: #ef6f6f;
+}
+
+
+.clickable
+{
+    cursor: pointer;
+}
+
+
+.margin_bottom
+{
+    margin-bottom: 5px;
+}
+
+.usa{background-image:url(https://thumbs.gfycat.com/RichBonyGlowworm-size_restricted.gif);
+  background-repeat:no-repeat;
+  height:60px;
+  width:250px;
+  background-position:center;
+   box-shadow: inset 0px 0px 6px #fff;
+    -webkit-box-shadow: inset 0px 0px 6px #fff;
+    border: 1px solid #62C2F9;
+    border-radius: 10px;
+	margin-top: 30px;
+	font-family: 'Carter One', cursive;
+	font-size:20px;}
+.china{background-image:url(https://media3.giphy.com/media/2blmehMgQbBRK/giphy.gif?cid=790b76115d25cd9c46b9b118f15e97e470453619e44478d1&rid=giphy.gif);
+  background-repeat:no-repeat;
+  height:60px;
+  width:250px;
+  background-position:center;
+   box-shadow: inset 0px 0px 6px #fff;
+    -webkit-box-shadow: inset 0px 0px 6px #fff;
+    border: 1px solid #62C2F9;
+    border-radius: 10px;
+	margin-top: 30px;
+	font-family: 'Carter One', cursive;
+	font-size:20px;}
+.japon{background-image:url(https://2.bp.blogspot.com/-7Yk5UOocUMs/WQTuvQ9hKPI/AAAAAAAGbHQ/BLqhOnzucAYLpx1je6lu00zB8GDgKP-zwCLcB/s1600/BANDERAS%2BDE%2BJAPON%2B%252833%2529.gif);
+  background-repeat:no-repeat;
+  height:60px;
+  width:250px;
+  background-position:center;
+   box-shadow: inset 0px 0px 6px #fff;
+    -webkit-box-shadow: inset 0px 0px 6px #fff;
+    border: 1px solid #62C2F9;
+    border-radius: 10px;
+	margin-top: 30px;
+	font-family: 'Carter One', cursive;
+	font-size:20px;}
+.india{background-image:url(https://thumbs.gfycat.com/ContentDescriptiveFlies-size_restricted.gif);
+  background-repeat:no-repeat;
+  height:60px;
+  width:250px;
+  background-position:center;
+   box-shadow: inset 0px 0px 6px #fff;
+    -webkit-box-shadow: inset 0px 0px 6px #fff;
+    border: 1px solid #62C2F9;
+    border-radius: 10px;
+	margin-top: 30px;
+	font-family: 'Carter One', cursive;
+	font-size:20px;}
+.alemania{background-image:url(https://3.bp.blogspot.com/-7LODONyXWvM/WGv1zQ0DYWI/AAAAAAAGLt8/R6qCi4TpWcAX0GiEDm2ZyN2l-7MbR93pQCLcB/s1600/BANDERAS%2BDE%2BALEMANIA%2B%25286%2529.gif);
+  background-repeat:no-repeat;
+  height:60px;
+  width:250px;
+  background-position:center;
+   box-shadow: inset 0px 0px 6px #fff;
+    -webkit-box-shadow: inset 0px 0px 6px #fff;
+    border: 1px solid #62C2F9;
+    border-radius: 10px;
+	margin-top: 30px;
+	font-family: 'Carter One', cursive;
+	font-size:20px;}
+.españa{background-image:url(https://thumbs.gfycat.com/MiniatureEmptyArmedcrab-size_restricted.gif);
+  background-repeat:no-repeat;
+  height:60px;
+  width:250px;
+  background-position:center;
+   box-shadow: inset 0px 0px 6px #fff;
+    -webkit-box-shadow: inset 0px 0px 6px #fff;
+    border: 1px solid #62C2F9;
+    border-radius: 10px;
+	margin-top: 30px;
+	font-family: 'Carter One', cursive;
+	font-size:20px;}
+	
+
+

@@ -1,0 +1,140 @@
+h2{
+	font-size:100px; 
+	font-family:"Press Start 2P", cursive;
+	
+}
+h2{color: white}
+body {
+  background-image: url("https://wallpapercave.com/wp/wp2408606.jpg");
+}
+.nope{
+	font-family:'Carter One', cursive;
+	color: white;
+	font-size:30px;
+}
+.destacado{ 
+	display: block;
+    width: 250px;
+    height: 60px;
+    margin: 0 auto;
+    
+    background: #4682B4;
+    background: -moz-linear-gradient(top, #87CEEB 0%, #4682B4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87CEEB), color-stop(100%,#4682B4));
+ 
+    box-shadow: inset 0px 0px 6px #fff;
+    -webkit-box-shadow: inset 0px 0px 6px #fff;
+    border: 1px solid #62C2F9;
+    border-radius: 10px;
+ 
+    font: bold 25px Helvetica, Sans-Serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #3090C7;
+	text-shadow: 0px 1px 2px #62C2F9
+	
+	}
+	.destacado{
+	position: absolute;
+	left:27%;
+	top:100%
+    
+		
+	}
+.seat{ 
+	display: block;
+    width: 250px;
+    height: 60px;
+    margin: 0 auto;
+    
+    background: #4682B4;
+    background: -moz-linear-gradient(top, #87CEEB 0%, #4682B4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87CEEB), color-stop(100%,#4682B4));
+ 
+    box-shadow: inset 0px 0px 6px #fff;
+    -webkit-box-shadow: inset 0px 0px 6px #fff;
+    border: 1px solid #62C2F9;
+    border-radius: 10px;
+	margin-top:30px;
+ 
+    font: bold 25px Helvetica, Sans-Serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #3090C7;
+	text-shadow: 0px 1px 2px #62C2F9
+	}
+
+	.seat{
+		position:absolute;
+		right:27%;
+		top:110%
+	}
+	
+.fonetic{ 
+	display: block;
+    width: 250px;
+    height: 60px;
+    margin: 0 auto;
+    
+    background: #4682B4;
+    background: -moz-linear-gradient(top, #87CEEB 0%, #4682B4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87CEEB), color-stop(100%,#4682B4));
+ 
+    box-shadow: inset 0px 0px 6px #fff;
+    -webkit-box-shadow: inset 0px 0px 6px #fff;
+    border: 1px solid #62C2F9;
+    border-radius: 10px;
+ 
+    font: bold 25px Helvetica, Sans-Serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #3090C7;
+	text-shadow: 0px 1px 2px #62C2F9;
+	margin-top:30px;
+	}
+	
+	.fonetic{
+		position:absolute;
+		top:110%;
+		left:27%
+		}
+	
+	
+.asti{ 
+	display: block;
+    width: 250px;
+    height: 60px;
+    margin: 0 auto;
+    
+    background: #4682B4;
+    background: -moz-linear-gradient(top, #87CEEB 0%, #4682B4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87CEEB), color-stop(100%,#4682B4));
+ 
+    box-shadow: inset 0px 0px 6px #fff;
+    -webkit-box-shadow: inset 0px 0px 6px #fff;
+    border: 1px solid #62C2F9;
+    border-radius: 10px;
+ 
+    font: bold 25px Helvetica, Sans-Serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #3090C7;
+	text-shadow: 0px 1px 2px #62C2F9
+	}
+	
+	.asti{
+		position:absolute;
+		right:27%;
+		top:100%
+	}
+	.foot{
+		position:absolute;
+		display:block;
+		top:180%;
+		left:30%;
+		color:white;
+		background-color:black;

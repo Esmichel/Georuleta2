@@ -1,0 +1,19 @@
+h2{
+	font-family: 'Press Start 2P', cursive;
+	font-size: 50px;
+}
+
+.jarraitu
+{	  background-image:url(https://thumbs.gfycat.com/AfraidRadiantGull-small.gif);
+  background-repeat:no-repeat;
+  height:60px;
+  width:250px;
+  background-position:center;
+   box-shadow: inset 0px 0px 6px #fff;
+    -webkit-box-shadow: inset 0px 0px 6px #fff;
+    border: 1px solid #62C2F9;
+    border-radius: 10px;
+	margin-top: 30px;
+	font-family: 'Carter One', cursive;
+	font-size:20px;
+}
